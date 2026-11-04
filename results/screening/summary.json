@@ -1,0 +1,43 @@
+{
+  "n_candidates": 1500,
+  "mesh_wall_s": 304.9861140830326,
+  "mesh_cpu_s": 907.6300508180284,
+  "gnn_wall_s": 90.7639763339539,
+  "fe_time_per_design_s": 21.49925694798003,
+  "n_pred_feasible": {
+    "gnn": 69,
+    "gp": 67
+  },
+  "gnn": {
+    "proposed": 8,
+    "truly_feasible": 6,
+    "best_verified_mass": 0.8564686986151641,
+    "best_verified": {
+      "t_b": 9.143,
+      "t_w": 7.407,
+      "r_f": 7.31,
+      "L_g": 0.0,
+      "t_g": 4.634,
+      "d_h": 12.716,
+      "mass": 0.8564686986151641,
+      "fe_f1": 100.1896,
+      "fe_life": 3050.199874761732
+    }
+  },
+  "gp": {
+    "proposed": 8,
+    "truly_feasible": 6,
+    "best_verified_mass": 0.8564686986151641,
+    "best_verified": {
+      "t_b": 9.143,
+      "t_w": 7.407,
+      "r_f": 7.31,
+      "L_g": 0.0,
+      "t_g": 4.634,
+      "d_h": 12.716,
+      "mass": 0.8564686986151641,
+      "fe_f1": 100.1896,
+      "fe_life": 3050.199874761732
+    }
+  }
+}
