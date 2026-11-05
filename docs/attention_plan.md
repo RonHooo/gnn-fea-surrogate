@@ -56,3 +56,15 @@ A3 uses stress-component targets. To compare with only one difference, the GNN m
 3. **Shifted family.** No clear improvement over the GNN; possibly worse. The Fourier features
    encode absolute positions, and in the shifted family the nodes sit at positions that were never
    seen in training. If this is the reason, A2 (no Fourier features) should do better on this set.
+
+## Addendum (2026-11-04 23:30, after the learning-rate runs, before any test / OOD / shifted evaluation)
+
+* Best validation loss of the attention model (seed 0, 50 epochs): 0.0282 (lr 5e-4), 0.0179 (1e-3),
+  **0.0139 (2e-3)**. By the rule above, lr = 2e-3 is used for all attention runs. It is at the edge of
+  the grid, so a larger value might be better still; the grid is not extended because the rule was
+  fixed in advance. The lr 2e-3 run is kept as seed 0 (`results/runs/transformer_s0`).
+* Change to the plan: giving only the attention model a learning-rate search would be a second
+  difference between the two models. The GNN therefore gets the same grid (5e-4, 1e-3, 2e-3; the
+  1e-3 run is the existing `gnn_stress`) with the same rule, and its extra seeds and mesh-only
+  controls use the chosen value. The choice is written to `results/attention/lr_choice.json`.
+* Same-wall-clock side check: 300 epochs (50 epochs took 6.9-8.6 min, the GNN took 51 min).
