@@ -22,8 +22,12 @@ OUT = ROOT / "results/attention"
 OUT.mkdir(parents=True, exist_ok=True)
 
 S = lambda name: [f"{name}_s{k}" for k in range(3)]
+CHOICE = json.loads((OUT / "lr_choice.json").read_text()) if (OUT / "lr_choice.json").exists() else {}
+GNN0 = CHOICE.get("gnn_seed0_run", "gnn_stress")       # GNN seed 0 at the learning rate chosen on val
+GNN_RUNS = [GNN0, "gnn_stress_s1", "gnn_stress_s2"]
 GROUPS = [
-    ("gnn", "GNN, stress targets (final)", ["gnn_stress", "gnn_stress_s1", "gnn_stress_s2"]),
+    ("gnn", f"GNN, stress targets (final), lr {CHOICE.get('gnn_lr', '1e-3')}", GNN_RUNS),
+    ("gnn_readme", "GNN in the README (lr 1e-3, seed 0)", ["gnn_stress"]),
     ("a0", "Attention A0 (32 slices)", S("transformer")),
     ("a1_16", "A1: 16 slices", S("transformer_m16")),
     ("a1_64", "A1: 64 slices", S("transformer_m64")),
@@ -135,7 +139,7 @@ def per_graph(run):
 
 def parity():
     sets = (("test", "o", "C0"), ("ood", "^", "C3"), ("shift", "s", "C2"))
-    models = [("gnn_stress", "GNN (seed 0)"), ("transformer_s0", "Attention A0 (seed 0)"), ("gp", "GP")]
+    models = [(GNN0, "GNN (seed 0)"), ("transformer_s0", "Attention A0 (seed 0)"), ("gp", "GP")]
     fig, axes = plt.subplots(3, 3, figsize=(13, 12))
     for row, (run, name) in enumerate(models):
         df = per_graph(run)
@@ -167,7 +171,7 @@ def parity():
 
 def shift_distribution():
     """Per-design errors on the shifted family (each design averaged over the 3 seeds)."""
-    models = [("GNN", ["gnn_stress", "gnn_stress_s1", "gnn_stress_s2"]), ("Attention A0", S("transformer")),
+    models = [("GNN", GNN_RUNS), ("Attention A0", S("transformer")),
               ("A2: no Fourier", S("transformer_nofourier")), ("A4: + local step", S("transformer_local"))]
     fig, axes = plt.subplots(1, 2, figsize=(12, 4.5))
     rng = np.random.default_rng(0)
@@ -218,7 +222,7 @@ def ablation_bars(a: pd.DataFrame):
 
 def curves():
     fig, axes = plt.subplots(1, 2, figsize=(12, 4))
-    for run, lab, c in (("gnn_stress", "GNN (seed 0)", "C1"), ("transformer_s0", "Attention A0 (seed 0)", "C0"),
+    for run, lab, c in ((GNN0, "GNN (seed 0)", "C1"), ("transformer_s0", "Attention A0 (seed 0)", "C0"),
                         ("transformer_long_s0", "Attention, same wall-clock", "C2")):
         f = RUNS / run / "history.csv"
         if not f.exists():
@@ -252,7 +256,7 @@ def render_median():
     name = m.iloc[len(m) // 2]["name"]
     g = {x.meta["name"]: x for x in test}[name]
     preds, errs = {}, {}
-    for run, lab in (("gnn_stress", "GNN"), ("transformer_s0", "Attention")):
+    for run, lab in ((GNN0, "GNN"), ("transformer_s0", "Attention")):
         model, norm, cfg = load_model(RUNS / run, device)
         preds[lab] = predict(model, norm, [g], device, cfg.get("targets", "vm"))[0][0][:, 3]
         r = per_graph(run)
@@ -291,7 +295,7 @@ def main():
     a = aggregate(df)
     df.to_csv(OUT / "all_runs.csv", index=False)
     a.to_csv(OUT / "summary_by_model.csv", index=False)
-    main_keys = ["gnn", "a0", "long", "gp", "pointmlp"]
+    main_keys = ["gnn", "gnn_readme", "a0", "long", "gp", "pointmlp"]
     abl_keys = ["a0", "a1_16", "a1_64", "a2", "a3", "a4", "gnn", "gnn_mo", "gnn_mo_ng"]
     text = ["## Test set (60 designs)", table(a, main_keys), "",
             "## Ablations (test set)", table(a, abl_keys), "",

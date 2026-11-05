@@ -13,7 +13,9 @@ from gnnsurrogate.data import load_dataset, split_dataset
 from gnnsurrogate.evaluate import load_model, time_inference
 from gnnsurrogate.train import pick_device
 
-RUNS = ["gnn_stress", "transformer_s0", "transformer_m16_s0", "transformer_m64_s0", "transformer_local_s0",
+CHOICE = ROOT / "results/attention/lr_choice.json"
+GNN0 = json.loads(CHOICE.read_text())["gnn_seed0_run"] if CHOICE.exists() else "gnn_stress"
+RUNS = [GNN0, "transformer_s0", "transformer_m16_s0", "transformer_m64_s0", "transformer_local_s0",
         "pointmlp"]
 
 
