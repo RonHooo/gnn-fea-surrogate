@@ -119,12 +119,23 @@ def main(argv=None):
     ap.add_argument("--raw", default="data/coarse")
     ap.add_argument("--cache", default="data/graphs_coarse.pt")
     ap.add_argument("--device", default="auto")
+    ap.add_argument("--val-only", action="store_true",
+                    help="only the validation set (for model selection; writes *_val files, no test metrics)")
     args = ap.parse_args(argv)
     device = pick_device(args.device)
     graphs = load_dataset(args.raw, args.cache)
     train, val, test, ood = split_dataset(graphs)
     shift = [g for g in graphs if g.meta["split"] == "shift"]
     model, norm, cfg = load_model(args.run, device)
+    if args.val_only:
+        rows = [dict(graph_metrics(g, yp, gp), set="val")
+                for g, (yp, gp) in zip(val, predict(model, norm, val, device, cfg.get("targets", "vm")))]
+        df = pd.DataFrame(rows)
+        df.to_csv(Path(args.run) / "per_graph_metrics_val.csv", index=False)
+        s = summarize(df)
+        (Path(args.run) / "summary_val.json").write_text(json.dumps(s, indent=2, default=float))
+        print(json.dumps({k: s[k] for k in s if k != "n"}, indent=1, default=float))
+        return
     rows = []
     for split_name, gs in (("test", test), ("ood", ood), ("val", val), ("shift", shift)):
         if not gs:

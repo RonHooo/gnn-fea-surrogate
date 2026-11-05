@@ -14,6 +14,7 @@ import torch
 
 from .data import load_dataset, split_dataset, Normalizer, collate, TARGET_COLS
 from .model import MeshGNN, PointMLP
+from .transformer import SliceTransformer
 
 PAD = (1024, 8192)   # node / edge bucket sizes for the MPS backend
 
@@ -32,6 +33,11 @@ def build_model(cfg: dict) -> torch.nn.Module:
     n_out = len(TARGET_COLS[cfg.get("targets", "vm")])
     if cfg["model"] == "pointmlp":
         return PointMLP(hidden=cfg.get("hidden", 256), layers=cfg.get("layers", 6), node_out=n_out)
+    if cfg["model"] == "transformer":
+        return SliceTransformer(hidden=cfg["hidden"], layers=cfg["layers"], heads=cfg["heads"],
+                                n_slices=cfg["slices"], mlp_ratio=cfg["mlp_ratio"], n_freq=cfg["n_freq"],
+                                use_fourier=cfg["use_fourier"], use_params=cfg["use_params"],
+                                local=cfg["local"], node_out=n_out)
     return MeshGNN(hidden=cfg["hidden"], layers=cfg["layers"], use_params=cfg["use_params"],
                    use_global=cfg["use_global"], node_out=n_out)
 
@@ -64,12 +70,19 @@ def main(argv=None):
     ap.add_argument("--raw", default="data/coarse")
     ap.add_argument("--cache", default="data/graphs_coarse.pt")
     ap.add_argument("--out", default="results/runs/gnn")
-    ap.add_argument("--model", default="gnn", choices=["gnn", "pointmlp"])
+    ap.add_argument("--model", default="gnn", choices=["gnn", "pointmlp", "transformer"])
     ap.add_argument("--hidden", type=int, default=64)
     ap.add_argument("--layers", type=int, default=10)
     ap.add_argument("--no-params", action="store_true")
     ap.add_argument("--no-global", action="store_true")
     ap.add_argument("--targets", default="vm", choices=list(TARGET_COLS))
+    # slice-attention model only
+    ap.add_argument("--heads", type=int, default=4)
+    ap.add_argument("--slices", type=int, default=32)
+    ap.add_argument("--mlp-ratio", type=int, default=2)
+    ap.add_argument("--n-freq", type=int, default=6)
+    ap.add_argument("--no-fourier", action="store_true")
+    ap.add_argument("--local", action="store_true")
     ap.add_argument("--epochs", type=int, default=150)
     ap.add_argument("--batch", type=int, default=4)
     ap.add_argument("--lr", type=float, default=1e-3)
@@ -94,9 +107,13 @@ def main(argv=None):
                targets=args.targets,
                epochs=args.epochs, batch=args.batch, lr=args.lr, w_global=args.w_global,
                n_train=len(train), n_val=len(val), n_test=len(test), n_ood=len(ood))
+    if args.model == "transformer":
+        cfg.update(heads=args.heads, slices=args.slices, mlp_ratio=args.mlp_ratio, n_freq=args.n_freq,
+                   use_fourier=not args.no_fourier, local=args.local)
     model = build_model(cfg).to(device)
     cols = TARGET_COLS[args.targets]
     n_par = sum(p.numel() for p in model.parameters())
+    cfg["n_params"] = n_par
     print(f"device={device} params={n_par} train={len(train)} val={len(val)}", flush=True)
 
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-5)
