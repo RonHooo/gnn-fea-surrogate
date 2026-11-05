@@ -137,3 +137,7 @@ python scripts/screen_designs.py
 python scripts/make_figures.py
 python scripts/results_table.py
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
