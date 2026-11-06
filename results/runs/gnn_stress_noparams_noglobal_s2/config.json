@@ -1,0 +1,18 @@
+{
+  "model": "gnn",
+  "hidden": 64,
+  "layers": 10,
+  "use_params": false,
+  "use_global": false,
+  "seed": 2,
+  "targets": "stress",
+  "epochs": 50,
+  "batch": 4,
+  "lr": 0.002,
+  "w_global": 1.0,
+  "n_train": 280,
+  "n_val": 60,
+  "n_test": 60,
+  "n_ood": 40,
+  "n_params": 322892
+}

@@ -1,0 +1,61 @@
+{
+  "params": {
+    "t_b": 11.623000144958496,
+    "t_w": 9.866999626159668,
+    "r_f": 4.829999923706055,
+    "L_g": 41.625,
+    "t_g": 4.284999847412109,
+    "d_h": 0.0
+  },
+  "design": "doe_0133",
+  "n_nodes": 4838,
+  "start_node": 812,
+  "start_pos_mm": [
+    4.900000095367432,
+    0.0,
+    83.5
+  ],
+  "max_hops": 38,
+  "hops_to_nearest_bolt_hole": 31,
+  "frac_within_1": 0.0018602728400165358,
+  "frac_within_10": 0.19677552707730467,
+  "slice_run": "transformer_s0",
+  "slices": [
+    {
+      "layer": 1,
+      "mean_max_weight": 0.3397752642631531,
+      "n_slices_used_as_argmax": 27,
+      "temperature": 0.51851487159729
+    },
+    {
+      "layer": 2,
+      "mean_max_weight": 0.30686336755752563,
+      "n_slices_used_as_argmax": 30,
+      "temperature": 0.5676614046096802
+    },
+    {
+      "layer": 3,
+      "mean_max_weight": 0.415802925825119,
+      "n_slices_used_as_argmax": 17,
+      "temperature": 0.5613610744476318
+    },
+    {
+      "layer": 4,
+      "mean_max_weight": 0.5700854659080505,
+      "n_slices_used_as_argmax": 16,
+      "temperature": 0.5410707592964172
+    },
+    {
+      "layer": 5,
+      "mean_max_weight": 0.5035003423690796,
+      "n_slices_used_as_argmax": 14,
+      "temperature": 0.5653698444366455
+    },
+    {
+      "layer": 6,
+      "mean_max_weight": 0.6796886324882507,
+      "n_slices_used_as_argmax": 13,
+      "temperature": 0.5283060073852539
+    }
+  ]
+}

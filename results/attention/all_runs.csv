@@ -1,0 +1,598 @@
+group,label,run,set,metric,value
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,test,u field,7.454436070596178
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,test,von Mises field,11.675239577889442
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,test,f1,1.009594202041626
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,test,peak von Mises,2.8046472867329917
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,test,log10 life,0.08693242818117142
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,ood,u field,13.972073672339318
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,ood,von Mises field,16.45651524886489
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,ood,f1,3.6613748967647552
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,ood,peak von Mises,5.323141366243362
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,ood,log10 life,0.13832971267402172
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,shift,u field,16.90880812704563
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,shift,von Mises field,19.67904458443324
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,shift,f1,5.481355786323547
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,shift,peak von Mises,7.665393153826396
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,shift,log10 life,0.10249149948358535
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,val,u field,8.781025999536118
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,val,von Mises field,12.488708024223644
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,val,f1,1.0060584545135498
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,val,peak von Mises,3.0047989885012307
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_lr2e-3_s0,val,log10 life,0.09092977518836658
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,test,u field,8.209476588914793
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,test,von Mises field,11.141000601152578
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,test,f1,0.8136306206385295
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,test,peak von Mises,2.7959551413853965
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,test,log10 life,0.0811337993790706
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,ood,u field,15.966135766357183
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,ood,von Mises field,15.844353307038544
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,ood,f1,3.6234015226364136
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,ood,peak von Mises,6.230871230363846
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,ood,log10 life,0.14848545901477336
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,shift,u field,17.143169629077118
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,shift,von Mises field,19.26827445626259
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,shift,f1,5.511776606241861
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,shift,peak von Mises,7.883430520693461
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,shift,log10 life,0.09973531713088353
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,val,u field,9.70665522540609
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,val,von Mises field,11.849927864968777
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,val,f1,0.7908406853675841
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,val,peak von Mises,3.540428678194682
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s1,val,log10 life,0.09250921681523323
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,test,u field,8.416950503985086
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,test,von Mises field,11.591919660568237
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,test,f1,0.9868249297142029
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,test,peak von Mises,2.78662900129954
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,test,log10 life,0.08621127754449845
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,ood,u field,14.872883083298802
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,ood,von Mises field,16.88521770760417
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,ood,f1,3.078397512435913
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,ood,peak von Mises,5.587552934885025
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,ood,log10 life,0.13509854022413492
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,shift,u field,17.463666287561256
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,shift,von Mises field,20.752381905913353
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,shift,f1,5.715463956197103
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,shift,peak von Mises,8.097818295160929
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,shift,log10 life,0.09818231413761774
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,val,u field,9.667557484159866
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,val,von Mises field,12.466478273272514
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,val,f1,0.9197030464808147
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,val,peak von Mises,3.5691633820533752
+gnn,"GNN, stress targets (final), lr 2e-3",gnn_stress_s2,val,log10 life,0.08465507502357165
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,test,u field,9.022270279626051
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,test,von Mises field,11.292513062556585
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,test,f1,0.8196396629015605
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,test,peak von Mises,2.9521491130193076
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,test,log10 life,0.08539265965421995
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,ood,u field,16.481079421937466
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,ood,von Mises field,16.089400686323643
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,ood,f1,3.6271734535694122
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,ood,peak von Mises,5.873646438121796
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,ood,log10 life,0.12748521836474538
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,shift,u field,18.812174946069717
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,shift,von Mises field,20.01795656979084
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,shift,f1,5.820799469947815
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,shift,peak von Mises,7.706999778747559
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,shift,log10 life,0.09688898672660191
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,val,u field,10.544512253254652
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,val,von Mises field,12.00895005216201
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,val,f1,0.8241015672683715
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,val,peak von Mises,3.446933726469676
+gnn_readme,"GNN in the README (lr 1e-3, seed 0)",gnn_stress,val,log10 life,0.08071981742978096
+a0,Attention A0 (32 slices),transformer_s0,test,u field,6.629980374127626
+a0,Attention A0 (32 slices),transformer_s0,test,von Mises field,6.991084969292085
+a0,Attention A0 (32 slices),transformer_s0,test,f1,0.668368935585022
+a0,Attention A0 (32 slices),transformer_s0,test,peak von Mises,2.438464562098185
+a0,Attention A0 (32 slices),transformer_s0,test,log10 life,0.08428044269482295
+a0,Attention A0 (32 slices),transformer_s0,ood,u field,13.709121076390145
+a0,Attention A0 (32 slices),transformer_s0,ood,von Mises field,13.846302786841989
+a0,Attention A0 (32 slices),transformer_s0,ood,f1,4.043272286653519
+a0,Attention A0 (32 slices),transformer_s0,ood,peak von Mises,6.528093665838242
+a0,Attention A0 (32 slices),transformer_s0,ood,log10 life,0.15168943824246525
+a0,Attention A0 (32 slices),transformer_s0,shift,u field,16.48055871327718
+a0,Attention A0 (32 slices),transformer_s0,shift,von Mises field,26.77799642086029
+a0,Attention A0 (32 slices),transformer_s0,shift,f1,5.477641622225444
+a0,Attention A0 (32 slices),transformer_s0,shift,peak von Mises,7.064860264460246
+a0,Attention A0 (32 slices),transformer_s0,shift,log10 life,0.11068881501754126
+a0,Attention A0 (32 slices),transformer_s0,val,u field,7.670592097565532
+a0,Attention A0 (32 slices),transformer_s0,val,von Mises field,7.403606232255696
+a0,Attention A0 (32 slices),transformer_s0,val,f1,0.6078367431958516
+a0,Attention A0 (32 slices),transformer_s0,val,peak von Mises,2.9626033703486123
+a0,Attention A0 (32 slices),transformer_s0,val,log10 life,0.10488433813055356
+a0,Attention A0 (32 slices),transformer_s1,test,u field,6.987162260338664
+a0,Attention A0 (32 slices),transformer_s1,test,von Mises field,6.966417928536734
+a0,Attention A0 (32 slices),transformer_s1,test,f1,0.700405736764272
+a0,Attention A0 (32 slices),transformer_s1,test,peak von Mises,2.6006280382474265
+a0,Attention A0 (32 slices),transformer_s1,test,log10 life,0.08119383503993352
+a0,Attention A0 (32 slices),transformer_s1,ood,u field,14.069276130758226
+a0,Attention A0 (32 slices),transformer_s1,ood,von Mises field,14.210607158020139
+a0,Attention A0 (32 slices),transformer_s1,ood,f1,3.3121100068092346
+a0,Attention A0 (32 slices),transformer_s1,ood,peak von Mises,6.745041012763978
+a0,Attention A0 (32 slices),transformer_s1,ood,log10 life,0.14006821317598223
+a0,Attention A0 (32 slices),transformer_s1,shift,u field,16.271436872581642
+a0,Attention A0 (32 slices),transformer_s1,shift,von Mises field,26.778197959065437
+a0,Attention A0 (32 slices),transformer_s1,shift,f1,5.416458646456401
+a0,Attention A0 (32 slices),transformer_s1,shift,peak von Mises,7.181298732757568
+a0,Attention A0 (32 slices),transformer_s1,shift,log10 life,0.09647532453139623
+a0,Attention A0 (32 slices),transformer_s1,val,u field,8.178626041238507
+a0,Attention A0 (32 slices),transformer_s1,val,von Mises field,7.467425633221865
+a0,Attention A0 (32 slices),transformer_s1,val,f1,0.7889423767725627
+a0,Attention A0 (32 slices),transformer_s1,val,peak von Mises,3.261366089185079
+a0,Attention A0 (32 slices),transformer_s1,val,log10 life,0.09606130495667457
+a0,Attention A0 (32 slices),transformer_s2,test,u field,6.7212759641309585
+a0,Attention A0 (32 slices),transformer_s2,test,von Mises field,6.974163272728523
+a0,Attention A0 (32 slices),transformer_s2,test,f1,0.7199774185816448
+a0,Attention A0 (32 slices),transformer_s2,test,peak von Mises,2.719085613886515
+a0,Attention A0 (32 slices),transformer_s2,test,log10 life,0.08045343905687333
+a0,Attention A0 (32 slices),transformer_s2,ood,u field,13.733446402475238
+a0,Attention A0 (32 slices),transformer_s2,ood,von Mises field,14.234328242018817
+a0,Attention A0 (32 slices),transformer_s2,ood,f1,3.365509957075119
+a0,Attention A0 (32 slices),transformer_s2,ood,peak von Mises,7.417723089456558
+a0,Attention A0 (32 slices),transformer_s2,ood,log10 life,0.13569598766043783
+a0,Attention A0 (32 slices),transformer_s2,shift,u field,16.57261953999599
+a0,Attention A0 (32 slices),transformer_s2,shift,von Mises field,27.176117325822513
+a0,Attention A0 (32 slices),transformer_s2,shift,f1,5.705454548199971
+a0,Attention A0 (32 slices),transformer_s2,shift,peak von Mises,7.010886470476787
+a0,Attention A0 (32 slices),transformer_s2,shift,log10 life,0.09250640024741491
+a0,Attention A0 (32 slices),transformer_s2,val,u field,7.819422278553248
+a0,Attention A0 (32 slices),transformer_s2,val,von Mises field,7.482702638953924
+a0,Attention A0 (32 slices),transformer_s2,val,f1,0.5917592843373617
+a0,Attention A0 (32 slices),transformer_s2,val,peak von Mises,3.217834333578746
+a0,Attention A0 (32 slices),transformer_s2,val,log10 life,0.08828141565124194
+a1_16,A1: 16 slices,transformer_m16_s0,test,u field,6.682937601581215
+a1_16,A1: 16 slices,transformer_m16_s0,test,von Mises field,6.904395079861085
+a1_16,A1: 16 slices,transformer_m16_s0,test,f1,0.728284219900767
+a1_16,A1: 16 slices,transformer_m16_s0,test,peak von Mises,2.3406501611073813
+a1_16,A1: 16 slices,transformer_m16_s0,test,log10 life,0.08332609683275223
+a1_16,A1: 16 slices,transformer_m16_s0,ood,u field,13.406114433892071
+a1_16,A1: 16 slices,transformer_m16_s0,ood,von Mises field,13.951164903119206
+a1_16,A1: 16 slices,transformer_m16_s0,ood,f1,3.731446266174317
+a1_16,A1: 16 slices,transformer_m16_s0,ood,peak von Mises,6.581599861383439
+a1_16,A1: 16 slices,transformer_m16_s0,ood,log10 life,0.15988899292424322
+a1_16,A1: 16 slices,transformer_m16_s0,shift,u field,16.787360571324825
+a1_16,A1: 16 slices,transformer_m16_s0,shift,von Mises field,27.280431613326073
+a1_16,A1: 16 slices,transformer_m16_s0,shift,f1,5.467984080314636
+a1_16,A1: 16 slices,transformer_m16_s0,shift,peak von Mises,7.490145365397136
+a1_16,A1: 16 slices,transformer_m16_s0,shift,log10 life,0.112503881752491
+a1_16,A1: 16 slices,transformer_m16_s0,val,u field,7.841774585346381
+a1_16,A1: 16 slices,transformer_m16_s0,val,von Mises field,7.411703870942195
+a1_16,A1: 16 slices,transformer_m16_s0,val,f1,0.7668447494506836
+a1_16,A1: 16 slices,transformer_m16_s0,val,peak von Mises,2.9242894053459167
+a1_16,A1: 16 slices,transformer_m16_s0,val,log10 life,0.10413384512066841
+a1_16,A1: 16 slices,transformer_m16_s1,test,u field,6.819047871977091
+a1_16,A1: 16 slices,transformer_m16_s1,test,von Mises field,7.069090971102317
+a1_16,A1: 16 slices,transformer_m16_s1,test,f1,0.6555488705635071
+a1_16,A1: 16 slices,transformer_m16_s1,test,peak von Mises,2.797030905882518
+a1_16,A1: 16 slices,transformer_m16_s1,test,log10 life,0.07809874763091405
+a1_16,A1: 16 slices,transformer_m16_s1,ood,u field,13.877185862511396
+a1_16,A1: 16 slices,transformer_m16_s1,ood,von Mises field,14.224864831194282
+a1_16,A1: 16 slices,transformer_m16_s1,ood,f1,3.754442185163498
+a1_16,A1: 16 slices,transformer_m16_s1,ood,peak von Mises,6.69249415397644
+a1_16,A1: 16 slices,transformer_m16_s1,ood,log10 life,0.14578264774754643
+a1_16,A1: 16 slices,transformer_m16_s1,shift,u field,16.351644545793533
+a1_16,A1: 16 slices,transformer_m16_s1,shift,von Mises field,27.227926279107727
+a1_16,A1: 16 slices,transformer_m16_s1,shift,f1,5.4422734181086225
+a1_16,A1: 16 slices,transformer_m16_s1,shift,peak von Mises,7.211112181345622
+a1_16,A1: 16 slices,transformer_m16_s1,shift,log10 life,0.10534983823696772
+a1_16,A1: 16 slices,transformer_m16_s1,val,u field,8.068801698585352
+a1_16,A1: 16 slices,transformer_m16_s1,val,von Mises field,7.5243086988727255
+a1_16,A1: 16 slices,transformer_m16_s1,val,f1,0.669348140557607
+a1_16,A1: 16 slices,transformer_m16_s1,val,peak von Mises,3.4806516766548152
+a1_16,A1: 16 slices,transformer_m16_s1,val,log10 life,0.08923889870444933
+a1_16,A1: 16 slices,transformer_m16_s2,test,u field,6.633977893119057
+a1_16,A1: 16 slices,transformer_m16_s2,test,von Mises field,6.988179963082075
+a1_16,A1: 16 slices,transformer_m16_s2,test,f1,0.7788761456807455
+a1_16,A1: 16 slices,transformer_m16_s2,test,peak von Mises,2.565000355243683
+a1_16,A1: 16 slices,transformer_m16_s2,test,log10 life,0.08183768639961879
+a1_16,A1: 16 slices,transformer_m16_s2,ood,u field,13.595358049497008
+a1_16,A1: 16 slices,transformer_m16_s2,ood,von Mises field,13.95710738375783
+a1_16,A1: 16 slices,transformer_m16_s2,ood,f1,4.084585011005402
+a1_16,A1: 16 slices,transformer_m16_s2,ood,peak von Mises,7.1367718279361725
+a1_16,A1: 16 slices,transformer_m16_s2,ood,log10 life,0.1639884809963405
+a1_16,A1: 16 slices,transformer_m16_s2,shift,u field,16.825444474816322
+a1_16,A1: 16 slices,transformer_m16_s2,shift,von Mises field,27.60874244074027
+a1_16,A1: 16 slices,transformer_m16_s2,shift,f1,5.775894522666931
+a1_16,A1: 16 slices,transformer_m16_s2,shift,peak von Mises,7.502669692039491
+a1_16,A1: 16 slices,transformer_m16_s2,shift,log10 life,0.10395344446102778
+a1_16,A1: 16 slices,transformer_m16_s2,val,u field,7.656291822592418
+a1_16,A1: 16 slices,transformer_m16_s2,val,von Mises field,7.517378392318884
+a1_16,A1: 16 slices,transformer_m16_s2,val,f1,0.7036905487378439
+a1_16,A1: 16 slices,transformer_m16_s2,val,peak von Mises,3.186674515406291
+a1_16,A1: 16 slices,transformer_m16_s2,val,log10 life,0.09802494421601296
+a1_64,A1: 64 slices,transformer_m64_s0,test,u field,6.314665644119183
+a1_64,A1: 64 slices,transformer_m64_s0,test,von Mises field,7.069261701156695
+a1_64,A1: 64 slices,transformer_m64_s0,test,f1,0.8558379610379536
+a1_64,A1: 64 slices,transformer_m64_s0,test,peak von Mises,2.383953034877777
+a1_64,A1: 64 slices,transformer_m64_s0,test,log10 life,0.08356406837701798
+a1_64,A1: 64 slices,transformer_m64_s0,ood,u field,13.203344522044064
+a1_64,A1: 64 slices,transformer_m64_s0,ood,von Mises field,14.199838545173407
+a1_64,A1: 64 slices,transformer_m64_s0,ood,f1,3.5409286618232727
+a1_64,A1: 64 slices,transformer_m64_s0,ood,peak von Mises,7.36869066953659
+a1_64,A1: 64 slices,transformer_m64_s0,ood,log10 life,0.16109302146360277
+a1_64,A1: 64 slices,transformer_m64_s0,shift,u field,16.231650325159233
+a1_64,A1: 64 slices,transformer_m64_s0,shift,von Mises field,27.44580551981926
+a1_64,A1: 64 slices,transformer_m64_s0,shift,f1,5.494020779927571
+a1_64,A1: 64 slices,transformer_m64_s0,shift,peak von Mises,7.167686223983765
+a1_64,A1: 64 slices,transformer_m64_s0,shift,log10 life,0.10479048043489456
+a1_64,A1: 64 slices,transformer_m64_s0,val,u field,7.423559349651137
+a1_64,A1: 64 slices,transformer_m64_s0,val,von Mises field,7.632171008735895
+a1_64,A1: 64 slices,transformer_m64_s0,val,f1,0.752699077129364
+a1_64,A1: 64 slices,transformer_m64_s0,val,peak von Mises,3.038378655910492
+a1_64,A1: 64 slices,transformer_m64_s0,val,log10 life,0.09938731367389361
+a1_64,A1: 64 slices,transformer_m64_s1,test,u field,6.776773910969496
+a1_64,A1: 64 slices,transformer_m64_s1,test,von Mises field,7.063663372149071
+a1_64,A1: 64 slices,transformer_m64_s1,test,f1,0.6473603844642639
+a1_64,A1: 64 slices,transformer_m64_s1,test,peak von Mises,2.464595635732015
+a1_64,A1: 64 slices,transformer_m64_s1,test,log10 life,0.0779416079322497
+a1_64,A1: 64 slices,transformer_m64_s1,ood,u field,13.643498816527428
+a1_64,A1: 64 slices,transformer_m64_s1,ood,von Mises field,14.168690629303454
+a1_64,A1: 64 slices,transformer_m64_s1,ood,f1,4.013088047504425
+a1_64,A1: 64 slices,transformer_m64_s1,ood,peak von Mises,6.456763148307801
+a1_64,A1: 64 slices,transformer_m64_s1,ood,log10 life,0.14438958624377846
+a1_64,A1: 64 slices,transformer_m64_s1,shift,u field,16.582241021096706
+a1_64,A1: 64 slices,transformer_m64_s1,shift,von Mises field,27.534469788273174
+a1_64,A1: 64 slices,transformer_m64_s1,shift,f1,5.658961534500122
+a1_64,A1: 64 slices,transformer_m64_s1,shift,peak von Mises,7.131187717119852
+a1_64,A1: 64 slices,transformer_m64_s1,shift,log10 life,0.10070234487454097
+a1_64,A1: 64 slices,transformer_m64_s1,val,u field,7.848729273925224
+a1_64,A1: 64 slices,transformer_m64_s1,val,von Mises field,7.53857887039582
+a1_64,A1: 64 slices,transformer_m64_s1,val,f1,0.7099988063176473
+a1_64,A1: 64 slices,transformer_m64_s1,val,peak von Mises,3.138630489508311
+a1_64,A1: 64 slices,transformer_m64_s1,val,log10 life,0.08802892342209816
+a1_64,A1: 64 slices,transformer_m64_s2,test,u field,6.733770131443937
+a1_64,A1: 64 slices,transformer_m64_s2,test,von Mises field,7.06098177159826
+a1_64,A1: 64 slices,transformer_m64_s2,test,f1,0.7623690366744995
+a1_64,A1: 64 slices,transformer_m64_s2,test,peak von Mises,2.5408944487571716
+a1_64,A1: 64 slices,transformer_m64_s2,test,log10 life,0.08192075143257777
+a1_64,A1: 64 slices,transformer_m64_s2,ood,u field,13.869831445626915
+a1_64,A1: 64 slices,transformer_m64_s2,ood,von Mises field,14.046104913577437
+a1_64,A1: 64 slices,transformer_m64_s2,ood,f1,3.9844942092895503
+a1_64,A1: 64 slices,transformer_m64_s2,ood,peak von Mises,7.05493375658989
+a1_64,A1: 64 slices,transformer_m64_s2,ood,log10 life,0.1646541771478951
+a1_64,A1: 64 slices,transformer_m64_s2,shift,u field,16.818558784822624
+a1_64,A1: 64 slices,transformer_m64_s2,shift,von Mises field,26.819463198383648
+a1_64,A1: 64 slices,transformer_m64_s2,shift,f1,5.61459203561147
+a1_64,A1: 64 slices,transformer_m64_s2,shift,peak von Mises,7.17673937479655
+a1_64,A1: 64 slices,transformer_m64_s2,shift,log10 life,0.10353429267803828
+a1_64,A1: 64 slices,transformer_m64_s2,val,u field,7.95057701257368
+a1_64,A1: 64 slices,transformer_m64_s2,val,von Mises field,7.541856082777182
+a1_64,A1: 64 slices,transformer_m64_s2,val,f1,0.6982186436653137
+a1_64,A1: 64 slices,transformer_m64_s2,val,peak von Mises,3.005862534046173
+a1_64,A1: 64 slices,transformer_m64_s2,val,log10 life,0.0980532335738341
+a2,A2: no Fourier features,transformer_nofourier_s0,test,u field,6.933464206134279
+a2,A2: no Fourier features,transformer_nofourier_s0,test,von Mises field,9.819212506214777
+a2,A2: no Fourier features,transformer_nofourier_s0,test,f1,0.8203970392545064
+a2,A2: no Fourier features,transformer_nofourier_s0,test,peak von Mises,2.769598364830017
+a2,A2: no Fourier features,transformer_nofourier_s0,test,log10 life,0.08637901904682319
+a2,A2: no Fourier features,transformer_nofourier_s0,ood,u field,14.201408876106141
+a2,A2: no Fourier features,transformer_nofourier_s0,ood,von Mises field,14.657098837196827
+a2,A2: no Fourier features,transformer_nofourier_s0,ood,f1,2.7265362441539764
+a2,A2: no Fourier features,transformer_nofourier_s0,ood,peak von Mises,4.976285845041275
+a2,A2: no Fourier features,transformer_nofourier_s0,ood,log10 life,0.12557050995528699
+a2,A2: no Fourier features,transformer_nofourier_s0,shift,u field,16.95750705897808
+a2,A2: no Fourier features,transformer_nofourier_s0,shift,von Mises field,16.080617979168892
+a2,A2: no Fourier features,transformer_nofourier_s0,shift,f1,5.248713294665019
+a2,A2: no Fourier features,transformer_nofourier_s0,shift,peak von Mises,6.8874116738637285
+a2,A2: no Fourier features,transformer_nofourier_s0,shift,log10 life,0.09854462295770645
+a2,A2: no Fourier features,transformer_nofourier_s0,val,u field,8.374818147470554
+a2,A2: no Fourier features,transformer_nofourier_s0,val,von Mises field,10.572429858148098
+a2,A2: no Fourier features,transformer_nofourier_s0,val,f1,0.77064315478007
+a2,A2: no Fourier features,transformer_nofourier_s0,val,peak von Mises,3.30146461725235
+a2,A2: no Fourier features,transformer_nofourier_s0,val,log10 life,0.09433236792683601
+a2,A2: no Fourier features,transformer_nofourier_s1,test,u field,6.888141557574272
+a2,A2: no Fourier features,transformer_nofourier_s1,test,von Mises field,9.976370967924595
+a2,A2: no Fourier features,transformer_nofourier_s1,test,f1,0.7614728808403015
+a2,A2: no Fourier features,transformer_nofourier_s1,test,peak von Mises,2.9156975944836936
+a2,A2: no Fourier features,transformer_nofourier_s1,test,log10 life,0.07713895278672377
+a2,A2: no Fourier features,transformer_nofourier_s1,ood,u field,13.975649010390043
+a2,A2: no Fourier features,transformer_nofourier_s1,ood,von Mises field,14.374505653977392
+a2,A2: no Fourier features,transformer_nofourier_s1,ood,f1,3.24615478515625
+a2,A2: no Fourier features,transformer_nofourier_s1,ood,peak von Mises,5.958471894264221
+a2,A2: no Fourier features,transformer_nofourier_s1,ood,log10 life,0.12417410723865033
+a2,A2: no Fourier features,transformer_nofourier_s1,shift,u field,16.493856733043987
+a2,A2: no Fourier features,transformer_nofourier_s1,shift,von Mises field,16.578632816672325
+a2,A2: no Fourier features,transformer_nofourier_s1,shift,f1,4.926367004712422
+a2,A2: no Fourier features,transformer_nofourier_s1,shift,peak von Mises,6.854400833447774
+a2,A2: no Fourier features,transformer_nofourier_s1,shift,log10 life,0.09485825846592585
+a2,A2: no Fourier features,transformer_nofourier_s1,val,u field,8.16439681686461
+a2,A2: no Fourier features,transformer_nofourier_s1,val,von Mises field,10.622769097487133
+a2,A2: no Fourier features,transformer_nofourier_s1,val,f1,0.8288492759068807
+a2,A2: no Fourier features,transformer_nofourier_s1,val,peak von Mises,3.4370146195093794
+a2,A2: no Fourier features,transformer_nofourier_s1,val,log10 life,0.09145460004607836
+a2,A2: no Fourier features,transformer_nofourier_s2,test,u field,7.044157376512886
+a2,A2: no Fourier features,transformer_nofourier_s2,test,von Mises field,10.86355355878671
+a2,A2: no Fourier features,transformer_nofourier_s2,test,f1,0.9157734115918477
+a2,A2: no Fourier features,transformer_nofourier_s2,test,peak von Mises,2.8721274932225547
+a2,A2: no Fourier features,transformer_nofourier_s2,test,log10 life,0.08647781759500503
+a2,A2: no Fourier features,transformer_nofourier_s2,ood,u field,14.426962067373097
+a2,A2: no Fourier features,transformer_nofourier_s2,ood,von Mises field,15.662549734115599
+a2,A2: no Fourier features,transformer_nofourier_s2,ood,f1,3.423593640327453
+a2,A2: no Fourier features,transformer_nofourier_s2,ood,peak von Mises,5.301095694303513
+a2,A2: no Fourier features,transformer_nofourier_s2,ood,log10 life,0.13318282179534435
+a2,A2: no Fourier features,transformer_nofourier_s2,shift,u field,16.459443295995392
+a2,A2: no Fourier features,transformer_nofourier_s2,shift,von Mises field,17.138669441143673
+a2,A2: no Fourier features,transformer_nofourier_s2,shift,f1,4.835726618766785
+a2,A2: no Fourier features,transformer_nofourier_s2,shift,peak von Mises,6.979600985844931
+a2,A2: no Fourier features,transformer_nofourier_s2,shift,log10 life,0.09872703502575557
+a2,A2: no Fourier features,transformer_nofourier_s2,val,u field,8.12793169481059
+a2,A2: no Fourier features,transformer_nofourier_s2,val,von Mises field,11.632068927089373
+a2,A2: no Fourier features,transformer_nofourier_s2,val,f1,0.8542223771413168
+a2,A2: no Fourier features,transformer_nofourier_s2,val,peak von Mises,3.307017783323924
+a2,A2: no Fourier features,transformer_nofourier_s2,val,log10 life,0.09814872319499651
+a3,A3: mesh only (no design variables),transformer_noparams_s0,test,u field,7.441914786274234
+a3,A3: mesh only (no design variables),transformer_noparams_s0,test,von Mises field,7.946279421448707
+a3,A3: mesh only (no design variables),transformer_noparams_s0,test,f1,0.7446415225664774
+a3,A3: mesh only (no design variables),transformer_noparams_s0,test,peak von Mises,2.224883039792379
+a3,A3: mesh only (no design variables),transformer_noparams_s0,test,log10 life,0.0783803320179383
+a3,A3: mesh only (no design variables),transformer_noparams_s0,ood,u field,17.099056970328093
+a3,A3: mesh only (no design variables),transformer_noparams_s0,ood,von Mises field,15.330030461773275
+a3,A3: mesh only (no design variables),transformer_noparams_s0,ood,f1,4.85658586025238
+a3,A3: mesh only (no design variables),transformer_noparams_s0,ood,peak von Mises,6.6506148874759665
+a3,A3: mesh only (no design variables),transformer_noparams_s0,ood,log10 life,0.15518502835184336
+a3,A3: mesh only (no design variables),transformer_noparams_s0,shift,u field,15.969924281040829
+a3,A3: mesh only (no design variables),transformer_noparams_s0,shift,von Mises field,27.29347681005796
+a3,A3: mesh only (no design variables),transformer_noparams_s0,shift,f1,5.571708679199219
+a3,A3: mesh only (no design variables),transformer_noparams_s0,shift,peak von Mises,7.383578618367513
+a3,A3: mesh only (no design variables),transformer_noparams_s0,shift,log10 life,0.09603330045938492
+a3,A3: mesh only (no design variables),transformer_noparams_s0,val,u field,8.709003968785206
+a3,A3: mesh only (no design variables),transformer_noparams_s0,val,von Mises field,8.588374716540176
+a3,A3: mesh only (no design variables),transformer_noparams_s0,val,f1,0.7308500011761984
+a3,A3: mesh only (no design variables),transformer_noparams_s0,val,peak von Mises,3.150803248087565
+a3,A3: mesh only (no design variables),transformer_noparams_s0,val,log10 life,0.11294179533918698
+a3,A3: mesh only (no design variables),transformer_noparams_s1,test,u field,6.957227612535159
+a3,A3: mesh only (no design variables),transformer_noparams_s1,test,von Mises field,7.792217805981635
+a3,A3: mesh only (no design variables),transformer_noparams_s1,test,f1,0.8159453670183817
+a3,A3: mesh only (no design variables),transformer_noparams_s1,test,peak von Mises,2.4490263064702353
+a3,A3: mesh only (no design variables),transformer_noparams_s1,test,log10 life,0.08115997165441513
+a3,A3: mesh only (no design variables),transformer_noparams_s1,ood,u field,17.502906247973442
+a3,A3: mesh only (no design variables),transformer_noparams_s1,ood,von Mises field,15.356248496100305
+a3,A3: mesh only (no design variables),transformer_noparams_s1,ood,f1,4.859969913959503
+a3,A3: mesh only (no design variables),transformer_noparams_s1,ood,peak von Mises,6.398641765117645
+a3,A3: mesh only (no design variables),transformer_noparams_s1,ood,log10 life,0.16283737877383828
+a3,A3: mesh only (no design variables),transformer_noparams_s1,shift,u field,16.257679499685764
+a3,A3: mesh only (no design variables),transformer_noparams_s1,shift,von Mises field,27.53307076791922
+a3,A3: mesh only (no design variables),transformer_noparams_s1,shift,f1,5.79540491104126
+a3,A3: mesh only (no design variables),transformer_noparams_s1,shift,peak von Mises,7.0397498210271205
+a3,A3: mesh only (no design variables),transformer_noparams_s1,shift,log10 life,0.10021966050068537
+a3,A3: mesh only (no design variables),transformer_noparams_s1,val,u field,8.14399441704154
+a3,A3: mesh only (no design variables),transformer_noparams_s1,val,von Mises field,8.452132704357306
+a3,A3: mesh only (no design variables),transformer_noparams_s1,val,f1,0.7059191664059956
+a3,A3: mesh only (no design variables),transformer_noparams_s1,val,peak von Mises,2.8529957930246987
+a3,A3: mesh only (no design variables),transformer_noparams_s1,val,log10 life,0.10510593727231025
+a3,A3: mesh only (no design variables),transformer_noparams_s2,test,u field,6.964377850914995
+a3,A3: mesh only (no design variables),transformer_noparams_s2,test,von Mises field,7.76168671126167
+a3,A3: mesh only (no design variables),transformer_noparams_s2,test,f1,0.7888258496920267
+a3,A3: mesh only (no design variables),transformer_noparams_s2,test,peak von Mises,2.489546239376068
+a3,A3: mesh only (no design variables),transformer_noparams_s2,test,log10 life,0.0750006819764773
+a3,A3: mesh only (no design variables),transformer_noparams_s2,ood,u field,18.233401514589787
+a3,A3: mesh only (no design variables),transformer_noparams_s2,ood,von Mises field,15.24077902548015
+a3,A3: mesh only (no design variables),transformer_noparams_s2,ood,f1,4.250922054052353
+a3,A3: mesh only (no design variables),transformer_noparams_s2,ood,peak von Mises,5.884629637002945
+a3,A3: mesh only (no design variables),transformer_noparams_s2,ood,log10 life,0.17056900653988122
+a3,A3: mesh only (no design variables),transformer_noparams_s2,shift,u field,16.099413484334946
+a3,A3: mesh only (no design variables),transformer_noparams_s2,shift,von Mises field,27.63934902846813
+a3,A3: mesh only (no design variables),transformer_noparams_s2,shift,f1,5.734242598215739
+a3,A3: mesh only (no design variables),transformer_noparams_s2,shift,peak von Mises,7.010702689488729
+a3,A3: mesh only (no design variables),transformer_noparams_s2,shift,log10 life,0.09624469031890233
+a3,A3: mesh only (no design variables),transformer_noparams_s2,val,u field,8.202304132282734
+a3,A3: mesh only (no design variables),transformer_noparams_s2,val,von Mises field,8.466249164193869
+a3,A3: mesh only (no design variables),transformer_noparams_s2,val,f1,0.737897257010142
+a3,A3: mesh only (no design variables),transformer_noparams_s2,val,peak von Mises,2.7717044949531555
+a3,A3: mesh only (no design variables),transformer_noparams_s2,val,log10 life,0.09547837153077125
+a4,A4: + local mesh-neighbour step,transformer_local_s0,test,u field,6.91177570571502
+a4,A4: + local mesh-neighbour step,transformer_local_s0,test,von Mises field,7.558488808572291
+a4,A4: + local mesh-neighbour step,transformer_local_s0,test,f1,0.7085872689882914
+a4,A4: + local mesh-neighbour step,transformer_local_s0,test,peak von Mises,2.0245152711868286
+a4,A4: + local mesh-neighbour step,transformer_local_s0,test,log10 life,0.08668992271025976
+a4,A4: + local mesh-neighbour step,transformer_local_s0,ood,u field,14.337789928540587
+a4,A4: + local mesh-neighbour step,transformer_local_s0,ood,von Mises field,14.20770280994475
+a4,A4: + local mesh-neighbour step,transformer_local_s0,ood,f1,3.802488148212433
+a4,A4: + local mesh-neighbour step,transformer_local_s0,ood,peak von Mises,8.36733803153038
+a4,A4: + local mesh-neighbour step,transformer_local_s0,ood,log10 life,0.18601475981995463
+a4,A4: + local mesh-neighbour step,transformer_local_s0,shift,u field,16.469727692504723
+a4,A4: + local mesh-neighbour step,transformer_local_s0,shift,von Mises field,27.010676786303524
+a4,A4: + local mesh-neighbour step,transformer_local_s0,shift,f1,5.74299971262614
+a4,A4: + local mesh-neighbour step,transformer_local_s0,shift,peak von Mises,7.333195606867473
+a4,A4: + local mesh-neighbour step,transformer_local_s0,shift,log10 life,0.10499331702788671
+a4,A4: + local mesh-neighbour step,transformer_local_s0,val,u field,8.042930547768872
+a4,A4: + local mesh-neighbour step,transformer_local_s0,val,von Mises field,8.059166949242353
+a4,A4: + local mesh-neighbour step,transformer_local_s0,val,f1,0.6756299734115601
+a4,A4: + local mesh-neighbour step,transformer_local_s0,val,peak von Mises,2.9020712773005166
+a4,A4: + local mesh-neighbour step,transformer_local_s0,val,log10 life,0.10553913488984108
+a4,A4: + local mesh-neighbour step,transformer_local_s1,test,u field,7.044768333435059
+a4,A4: + local mesh-neighbour step,transformer_local_s1,test,von Mises field,7.252417628963788
+a4,A4: + local mesh-neighbour step,transformer_local_s1,test,f1,0.7048017779986063
+a4,A4: + local mesh-neighbour step,transformer_local_s1,test,peak von Mises,2.5380862752596536
+a4,A4: + local mesh-neighbour step,transformer_local_s1,test,log10 life,0.07974767436583836
+a4,A4: + local mesh-neighbour step,transformer_local_s1,ood,u field,14.591358574107288
+a4,A4: + local mesh-neighbour step,transformer_local_s1,ood,von Mises field,13.66842808201909
+a4,A4: + local mesh-neighbour step,transformer_local_s1,ood,f1,3.9204385876655574
+a4,A4: + local mesh-neighbour step,transformer_local_s1,ood,peak von Mises,7.581620365381241
+a4,A4: + local mesh-neighbour step,transformer_local_s1,ood,log10 life,0.17315216967836022
+a4,A4: + local mesh-neighbour step,transformer_local_s1,shift,u field,16.42486644287904
+a4,A4: + local mesh-neighbour step,transformer_local_s1,shift,von Mises field,26.526203776399292
+a4,A4: + local mesh-neighbour step,transformer_local_s1,shift,f1,5.603686173756917
+a4,A4: + local mesh-neighbour step,transformer_local_s1,shift,peak von Mises,7.3690539598464975
+a4,A4: + local mesh-neighbour step,transformer_local_s1,shift,log10 life,0.10610562711954116
+a4,A4: + local mesh-neighbour step,transformer_local_s1,val,u field,8.253202897806961
+a4,A4: + local mesh-neighbour step,transformer_local_s1,val,von Mises field,7.7135149762034425
+a4,A4: + local mesh-neighbour step,transformer_local_s1,val,f1,0.6560696164766947
+a4,A4: + local mesh-neighbour step,transformer_local_s1,val,peak von Mises,3.2514585057894387
+a4,A4: + local mesh-neighbour step,transformer_local_s1,val,log10 life,0.08563926294445992
+a4,A4: + local mesh-neighbour step,transformer_local_s2,test,u field,6.656540480131905
+a4,A4: + local mesh-neighbour step,transformer_local_s2,test,von Mises field,7.1444233010212574
+a4,A4: + local mesh-neighbour step,transformer_local_s2,test,f1,0.6069011489550272
+a4,A4: + local mesh-neighbour step,transformer_local_s2,test,peak von Mises,2.5064484278361
+a4,A4: + local mesh-neighbour step,transformer_local_s2,test,log10 life,0.08390512019395828
+a4,A4: + local mesh-neighbour step,transformer_local_s2,ood,u field,13.985204827040434
+a4,A4: + local mesh-neighbour step,transformer_local_s2,ood,von Mises field,14.027228113263845
+a4,A4: + local mesh-neighbour step,transformer_local_s2,ood,f1,4.12695974111557
+a4,A4: + local mesh-neighbour step,transformer_local_s2,ood,peak von Mises,6.694872230291367
+a4,A4: + local mesh-neighbour step,transformer_local_s2,ood,log10 life,0.16980923963710665
+a4,A4: + local mesh-neighbour step,transformer_local_s2,shift,u field,16.908401524027187
+a4,A4: + local mesh-neighbour step,transformer_local_s2,shift,von Mises field,26.724599351485573
+a4,A4: + local mesh-neighbour step,transformer_local_s2,shift,f1,5.721328457196553
+a4,A4: + local mesh-neighbour step,transformer_local_s2,shift,peak von Mises,7.323261300722758
+a4,A4: + local mesh-neighbour step,transformer_local_s2,shift,log10 life,0.09853930821021398
+a4,A4: + local mesh-neighbour step,transformer_local_s2,val,u field,7.742380096266667
+a4,A4: + local mesh-neighbour step,transformer_local_s2,val,von Mises field,7.645319898923238
+a4,A4: + local mesh-neighbour step,transformer_local_s2,val,f1,0.6606161594390869
+a4,A4: + local mesh-neighbour step,transformer_local_s2,val,peak von Mises,3.192266921202342
+a4,A4: + local mesh-neighbour step,transformer_local_s2,val,log10 life,0.09160280699531237
+long,"A0, same wall-clock as the GNN",transformer_long_s0,test,u field,2.6440750683347383
+long,"A0, same wall-clock as the GNN",transformer_long_s0,test,von Mises field,3.2394407379130525
+long,"A0, same wall-clock as the GNN",transformer_long_s0,test,f1,0.677797794342041
+long,"A0, same wall-clock as the GNN",transformer_long_s0,test,peak von Mises,2.495680550734202
+long,"A0, same wall-clock as the GNN",transformer_long_s0,test,log10 life,0.08117527117331823
+long,"A0, same wall-clock as the GNN",transformer_long_s0,ood,u field,8.517580225598067
+long,"A0, same wall-clock as the GNN",transformer_long_s0,ood,von Mises field,10.423229234293103
+long,"A0, same wall-clock as the GNN",transformer_long_s0,ood,f1,5.136951506137848
+long,"A0, same wall-clock as the GNN",transformer_long_s0,ood,peak von Mises,7.574017643928528
+long,"A0, same wall-clock as the GNN",transformer_long_s0,ood,log10 life,0.19450406739488244
+long,"A0, same wall-clock as the GNN",transformer_long_s0,shift,u field,14.366724857439598
+long,"A0, same wall-clock as the GNN",transformer_long_s0,shift,von Mises field,26.439190382758778
+long,"A0, same wall-clock as the GNN",transformer_long_s0,shift,f1,5.672538677851359
+long,"A0, same wall-clock as the GNN",transformer_long_s0,shift,peak von Mises,7.308281262715657
+long,"A0, same wall-clock as the GNN",transformer_long_s0,shift,log10 life,0.11261189331610998
+long,"A0, same wall-clock as the GNN",transformer_long_s0,val,u field,3.043507256855567
+long,"A0, same wall-clock as the GNN",transformer_long_s0,val,von Mises field,3.3104736761500435
+long,"A0, same wall-clock as the GNN",transformer_long_s0,val,f1,0.5866037805875143
+long,"A0, same wall-clock as the GNN",transformer_long_s0,val,peak von Mises,2.2784979144732156
+long,"A0, same wall-clock as the GNN",transformer_long_s0,val,log10 life,0.08067953661084175
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,test,u field,21.587367479999862
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,test,von Mises field,25.833687384923298
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,test,f1,3.865059912204742
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,test,peak von Mises,6.591120461622873
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,test,log10 life,0.2644095325221618
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,ood,u field,31.937583331018686
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,ood,von Mises field,32.14141961187124
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,ood,f1,7.795790433883668
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,ood,peak von Mises,13.12496319413185
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,ood,log10 life,0.32106990460306406
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,shift,u field,35.067131121953324
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,shift,von Mises field,35.92297042409579
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,shift,f1,10.31250536441803
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,shift,peak von Mises,13.205600976943972
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,shift,log10 life,0.23331481566031773
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,val,u field,26.385433586935203
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,val,von Mises field,27.043855115771294
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,val,f1,3.4061568975448613
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,val,peak von Mises,7.6924317081769304
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s0,val,log10 life,0.2530523188412189
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,test,u field,18.54641414557894
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,test,von Mises field,23.490123401085537
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,test,f1,3.6474677920341496
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,test,peak von Mises,5.352858603000641
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,test,log10 life,0.22835836956898373
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,ood,u field,29.266441632062197
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,ood,von Mises field,30.39949730038643
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,ood,f1,8.902545869350433
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,ood,peak von Mises,11.205550879240036
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,ood,log10 life,0.2715391146019101
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,shift,u field,28.202133265634377
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,shift,von Mises field,31.158547947804134
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,shift,f1,8.831520477930704
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,shift,peak von Mises,11.945491035779316
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,shift,log10 life,0.2812668060262998
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,val,u field,21.15724952270587
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,val,von Mises field,24.343070512016617
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,val,f1,2.8467362125714617
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,val,peak von Mises,6.846758524576822
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s1,val,log10 life,0.21729680771629015
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,test,u field,20.527732943495113
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,test,von Mises field,24.88747162123521
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,test,f1,3.2518549760182696
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,test,peak von Mises,5.987560351689656
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,test,log10 life,0.18033644606669744
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,ood,u field,30.674381013959646
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,ood,von Mises field,31.74612201750279
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,ood,f1,8.995819091796875
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,ood,peak von Mises,12.847236990928652
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,ood,log10 life,0.2590069280937314
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,shift,u field,30.978995089729626
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,shift,von Mises field,32.64939333001772
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,shift,f1,9.378549456596375
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,shift,peak von Mises,10.378743807474772
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,shift,log10 life,0.1604229246576627
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,val,u field,23.864476419985294
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,val,von Mises field,25.84133813778559
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,val,f1,3.599024713039398
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,val,peak von Mises,6.635505656401317
+gnn_mo,"GNN, mesh only",gnn_stress_noparams_s2,val,log10 life,0.17596099426349004
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,test,u field,101.01639715333779
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,test,von Mises field,24.592898810903232
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,test,f1,3.9089943965276084
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,test,peak von Mises,6.4856623609860735
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,test,log10 life,0.2851652026176453
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,ood,u field,181.6964152082801
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,ood,von Mises field,30.245772041380402
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,ood,f1,10.252361595630646
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,ood,peak von Mises,11.034965068101883
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,ood,log10 life,0.3229948179796338
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,shift,u field,99.22192230820656
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,shift,von Mises field,30.568263481060665
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,shift,f1,8.492576479911804
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,shift,peak von Mises,11.182198921839397
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,shift,log10 life,0.22412044753630955
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,val,u field,128.34975043932596
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,val,von Mises field,25.21353473265966
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,val,f1,3.481342097123464
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,val,peak von Mises,6.655038197835286
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s0,val,log10 life,0.24478569800655048
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,test,u field,110.71109126011531
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,test,von Mises field,25.940492153167728
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,test,f1,3.9097561438878374
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,test,peak von Mises,6.614449123541514
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,test,log10 life,0.25730004608631135
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,ood,u field,195.6117881089449
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,ood,von Mises field,33.884495720267296
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,ood,f1,8.777624517679214
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,ood,peak von Mises,13.011034876108168
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,ood,log10 life,0.32410711543634535
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,shift,u field,107.94471631447473
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,shift,von Mises field,32.21987009048462
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,shift,f1,9.98295267422994
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,shift,peak von Mises,12.025921940803528
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,shift,log10 life,0.20728551000356674
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,val,u field,139.36994979778925
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,val,von Mises field,26.823022166887917
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,val,f1,3.496809502442678
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,val,peak von Mises,7.173023223876954
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s1,val,log10 life,0.2568095731238524
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,test,u field,106.40800682206948
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,test,von Mises field,25.88508506615957
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,test,f1,3.921942313512166
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,test,peak von Mises,7.787647843360901
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,test,log10 life,0.24157189627488454
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,ood,u field,191.11369863152504
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,ood,von Mises field,32.627274580299854
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,ood,f1,8.860599249601364
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,ood,peak von Mises,13.359299749135973
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,ood,log10 life,0.2966149765998125
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,shift,u field,104.42489117383957
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,shift,von Mises field,32.680435478687286
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,shift,f1,10.065059065818787
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,shift,peak von Mises,11.005872885386148
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,shift,log10 life,0.22250906924406688
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,val,u field,134.72860723733902
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,val,von Mises field,26.699400718013443
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,val,f1,3.2207307219505306
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,val,peak von Mises,7.843650976816813
+gnn_mo_ng,"GNN, mesh only, no global node",gnn_stress_noparams_noglobal_s2,val,log10 life,0.23482427274187406
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,test,u field,5.876655361304681
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,test,von Mises field,33.77723226944605
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,ood,u field,12.632420687004926
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,ood,von Mises field,36.68087735772133
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,shift,u field,15.947439335286617
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,shift,von Mises field,43.406440019607544
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,val,u field,7.153726276010275
+pointmlp,"point-wise MLP, no edges (von Mises target)",pointmlp,val,von Mises field,34.43692912658056
+gp,GP on the 6 design variables,gp,test,f1,0.10431946444221611
+gp,GP on the 6 design variables,gp,test,peak von Mises,2.511466564502957
+gp,GP on the 6 design variables,gp,test,log10 life,0.10136849624573988
+gp,GP on the 6 design variables,gp,ood,f1,0.5570380439626771
+gp,GP on the 6 design variables,gp,ood,peak von Mises,5.078119120194496
+gp,GP on the 6 design variables,gp,ood,log10 life,0.17046887073025951
+gp,GP on the 6 design variables,gp,shift,f1,5.750933560714007
+gp,GP on the 6 design variables,gp,shift,peak von Mises,7.514589801633859
+gp,GP on the 6 design variables,gp,shift,log10 life,0.11423509990650592

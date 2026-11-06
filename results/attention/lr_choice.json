@@ -1,0 +1,16 @@
+{
+  "rule": "lowest best-epoch validation loss, seed 0, 50 epochs",
+  "attention_lr": "2e-3",
+  "attention_val_loss": {
+    "5e-4": 0.0282,
+    "1e-3": 0.0179,
+    "2e-3": 0.0139
+  },
+  "gnn_lr": "2e-3",
+  "gnn_val_loss": {
+    "5e-4": 0.041730892409880954,
+    "1e-3": 0.0268093712007006,
+    "2e-3": 0.026682380711038907
+  },
+  "gnn_seed0_run": "gnn_stress_lr2e-3_s0"
+}

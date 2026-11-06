@@ -8,6 +8,8 @@ from pathlib import Path
 
 import numpy as np
 import pyvista as pv
+from matplotlib import colormaps
+from matplotlib.colors import ListedColormap
 import torch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -106,17 +108,20 @@ def slices(g, run, info):
     pl = pv.Plotter(shape=(1, len(layers)), off_screen=True, window_size=(700 * len(layers), 700))
     rng = np.random.default_rng(0)
     perm = rng.permutation(w[0].shape[1])            # shuffle slice ids so neighbouring ids get different colours
+    # one colour per slice (tab20 alone has only 20 colours, so 2 of the 32 slices would share one)
+    SLICE_CMAP = ListedColormap((list(colormaps["tab20"].colors) + list(colormaps["tab20b"].colors))[:w[0].shape[1]])
     for i, li in enumerate(layers):
         pl.subplot(0, i)
         gr = grid.copy()
         gr.point_data["slice"] = perm[w[li].argmax(1)].astype(float)
-        pl.add_mesh(gr.extract_surface(algorithm="dataset_surface"), scalars="slice", cmap="tab20",
-                    show_scalar_bar=False, interpolate_before_map=False)
+        pl.add_mesh(gr.extract_surface(algorithm="dataset_surface"), scalars="slice", cmap=SLICE_CMAP,
+                    clim=(0, w[li].shape[1] - 1), show_scalar_bar=False, interpolate_before_map=False)
         s = info["slices"][li]
         pl.add_text(f"layer {li + 1}: most likely slice of each node\n"
                     f"{s['n_slices_used_as_argmax']} of {w[li].shape[1]} slices used, "
                     f"mean top weight {s['mean_max_weight']:.2f}", font_size=11, color="black")
         view(pl, g.pos.numpy())
+        pl.camera.zoom(0.85)                          # leave room for the text at the top
     pl.screenshot(OUT / "learned_slices.png")
     pl.close()
 

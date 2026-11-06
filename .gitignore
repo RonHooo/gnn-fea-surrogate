@@ -3,3 +3,10 @@ __pycache__/
 .pytest_cache/
 data/
 .DS_Store
+
+# model weights of the ablation and learning-rate runs are not committed (configs, histories and
+# metrics are); weights are kept for the main attention, GNN and 300-epoch runs
+results/runs/transformer_*_s*/model.pt
+results/runs/gnn_stress_*_s*/model.pt
+!results/runs/transformer_long_s0/model.pt
+!results/runs/gnn_stress_lr2e-3_s0/model.pt

@@ -123,12 +123,13 @@ def extrapolation_table(a: pd.DataFrame) -> str:
                 parts.append(fmt(r, d) + u if r else "-")
             cells.append(" / ".join(parts))
         lines.append(f"| {name}: f1 / peak stress / log10 life | " + " | ".join(cells) + " |")
-    cells = []
-    for gk in ("gnn", "a0", "a2", "gp"):
-        parts = [fmt(look[(gk, "shift", m)], 1) + " %" if (gk, "shift", m) in look else "-"
-                 for m in ("u field", "von Mises field")]
-        cells.append(" / ".join(parts))
-    lines.append("| Shifted family: displacement / von Mises field | " + " | ".join(cells) + " |")
+    for split, name in (("ood", "OOD designs"), ("shift", "Shifted family")):
+        cells = []
+        for gk in ("gnn", "a0", "a2", "gp"):
+            parts = [fmt(look[(gk, split, m)], 1) + " %" if (gk, split, m) in look else "-"
+                     for m in ("u field", "von Mises field")]
+            cells.append(" / ".join(parts))
+        lines.append(f"| {name}: displacement / von Mises field | " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
 
@@ -171,9 +172,9 @@ def parity():
 
 def shift_distribution():
     """Per-design errors on the shifted family (each design averaged over the 3 seeds)."""
-    models = [("GNN", GNN_RUNS), ("Attention A0", S("transformer")),
-              ("A2: no Fourier", S("transformer_nofourier")), ("A4: + local step", S("transformer_local"))]
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4.5))
+    models = [("GNN", GNN_RUNS), ("Attention\nA0", S("transformer")),
+              ("A2\nno Fourier", S("transformer_nofourier")), ("A4\n+ local step", S("transformer_local"))]
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     rng = np.random.default_rng(0)
     for a, (col, lab) in zip(axes, (("u_rel_l2", "displacement field"), ("vm_rel_l2", "von Mises field"))):
         data, names = [], []
@@ -189,7 +190,7 @@ def shift_distribution():
         for i, v in enumerate(data):
             a.scatter(i + 1 + rng.uniform(-0.15, 0.15, len(v)), v, s=8, alpha=0.6,
                       c="C2" if "shifted" in names[i] else "C0")
-        a.set_xticks(range(1, len(names) + 1), names, fontsize=7)
+        a.set_xticks(range(1, len(names) + 1), names, fontsize=8)
         a.set_ylabel(f"relative L2 error, {lab} (%)")
         a.grid(True, axis="y", alpha=0.3)
     fig.suptitle("Per-design error, test (blue) vs shifted family (green); each point = one design, mean of 3 seeds")
@@ -207,11 +208,13 @@ def ablation_bars(a: pd.DataFrame):
     y = np.arange(len(keys))
     for ax, (split, metric) in zip(axes, panels):
         d = a[(a.set == split) & (a.metric == metric)].set_index("group").reindex(keys)
-        ax.barh(y, d["mean"], xerr=d["std"].fillna(0), color=["C1" if k.startswith("gnn") else "C0" for k in keys],
-                capsize=3)
+        for yi, k in zip(y, keys):                     # points, not bars: bar length means nothing on a log axis
+            ax.errorbar(d.loc[k, "mean"], yi, xerr=0 if np.isnan(d.loc[k, "std"]) else d.loc[k, "std"], fmt="o",
+                        color="C1" if k.startswith("gnn") else "C0", capsize=3, ms=6)
         ax.set_title(f"{metric}, {split} set")
-        ax.set_xlabel("relative L2 error (%), mean ± std over seeds")
-        ax.set_xscale("log")
+        ax.set_xlabel("relative L2 error (%), mean ± std over 3 seeds")
+        if metric == "u field":
+            ax.set_xscale("log")                       # mesh-only GNN without global node is at ~100 %
         ax.grid(True, axis="x", which="both", alpha=0.3)
     axes[0].set_yticks(y, [labels[k] for k in keys], fontsize=8)
     axes[0].invert_yaxis()
@@ -271,7 +274,7 @@ def render_median():
         pred = preds[lab]
         panels = ((true, "FE (CalculiX), von Mises", "turbo", clim, "FE von Mises (MPa)"),
                   (pred, f"{lab} prediction (seed 0)", "turbo", clim, f"{lab} von Mises (MPa)"),
-                  (np.abs(pred - true), f"|{lab} - FE|, rel. L2 error {100 * errs[lab]:.1f} %", "magma",
+                  (np.abs(pred - true), f"{lab} error vs FE (rel. L2 error {100 * errs[lab]:.1f} %)", "magma",
                    (0, clim[1] / 4), f"{lab} abs. error (MPa)"))
         for col, (vals, title, cmap, cl, bar) in enumerate(panels):
             pl.subplot(row, col)
@@ -279,8 +282,9 @@ def render_median():
             gr.point_data[bar] = vals
             pl.set_background("white")
             pl.add_mesh(gr.extract_surface(algorithm="dataset_surface"), scalars=bar, cmap=cmap, clim=cl,
-                        scalar_bar_args=dict(title=bar, color="black", fmt="%.0f", position_x=0.2,
-                                             position_y=0.05, width=0.6, height=0.06))
+                        scalar_bar_args=dict(title=bar, color="black", fmt="%.0f", vertical=True,
+                                             position_x=0.82, position_y=0.15, width=0.08, height=0.7,
+                                             title_font_size=16, label_font_size=14))
             pl.add_text(title, font_size=11, color="black")
             pl.view_isometric()
             pl.camera.azimuth = 215
